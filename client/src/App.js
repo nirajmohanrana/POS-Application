@@ -1,5 +1,6 @@
 import "antd/dist/antd.min.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import About from "./pages/About";
 import BillsPage from "./pages/BillsPage";
 import CartPage from "./pages/CartPage";
 import CustomerPage from "./pages/CustomerPage";
@@ -55,6 +56,7 @@ function App() {
           />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </>

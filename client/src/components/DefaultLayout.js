@@ -9,6 +9,7 @@ import {
   UserOutlined,
   LogoutOutlined,
   ShoppingCartOutlined,
+  ExclamationCircleOutlined
 } from "@ant-design/icons";
 import { Badge, Layout, Menu } from "antd";
 import React, { useEffect, useState } from "react";
@@ -56,6 +57,9 @@ const Defaultlayout = ({ children }) => {
               navigate('/login');
             }}>
             Logout
+          </Menu.Item>
+          <Menu.Item key="/about" icon={<ExclamationCircleOutlined />}>
+            <Link to="/about">About Us</Link>
           </Menu.Item>
         </Menu>
       </Sider>
